@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #3E2723;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6D4C41;
+    color: #FFF3E0;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: #FFF3E0;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a.highlighted {
+    background-color: #FFD54F;
+    color: #3E2723;
+    border-radius: 5px;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFECB3;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6D4C41;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #5D4037;
+}
+
+.moving-images {
+    margin: 30px auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    animation: slide 30s infinite;
+}
+
+.image-slider img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slide {
+    0%, 6.67%, 100% { transform: translateX(0); }
+    12.67%, 19.34% { transform: translateX(-100%); }
+    25.34%, 32.01% { transform: translateX(-200%); }
+    38.01%, 44.68% { transform: translateX(-300%); }
+    50.68%, 57.35% { transform: translateX(-400%); }
+    63.35%, 70.02% { transform: translateX(-500%); }
+    76.02%, 82.69% { transform: translateX(-600%); }
+    88.69%, 95.36% { transform: translateX(-700%); }
+}
+
+#announcements {
+    padding: 50px 20px;
+    background-color: #FFEB3B;
+}
+
+#announcements h2 {
+    color: #4E342E;
+}
+
+.announcement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.announcement {
+    background-color: #FFF3E0;
+    padding: 20px;
+    border: 1px solid #FFD54F;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1 1 30%;
+}
+
+#about {
+    padding: 50px 20px;
+    background-color: #FFCC80;
+}
+
+#about h2 {
+    color: #4E342E;
+}
+
+.leadership-team {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.leader {
+    text-align: center;
+    padding: 20px;
+    background-color: #9d6c3e;
+    color: #fdf6e4;
+    border: 1px solid #FFD54F;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.leader img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#academics {
+    padding: 50px 20px;
+    background-color: #FFAB40;
+}
+
+#academics h2 {
+    color: #4E342E;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resource {
+    background-color: #FFF3E0;
+    padding: 20px;
+    border: 1px solid #FFD54F;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#gallery {
+    padding: 50px 20px;
+    background-color: #FFE082;
+}
+
+#gallery h2 {
+    color: #4E342E;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #6D4C41;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.gallery-images img:hover {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.gallery-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 80px;
+    border: 5px solid #7d4c1e;
+    background-color: #f6e7b4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-left, .text-right {
+    color: #7d4c1e;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0 40px;
+}
+
+iframe {
+    border-radius: 50px;
+}
+
+#contact {
+    padding: 50px 20px;
+    background-color: #FFF8E1;
+}
+
+#contact h2 {
+    color: #4E342E;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #6D4C41;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #6D4C41;
+    color: #FFF3E0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background-color: #FFD54F;
+    color: #3E2723;
+}
+
+.contact-details {
+    margin-top: 30px;
+    color: #3E2723;
+}
+
+.map iframe {
+    border: none;
+    width: 100%;
+    height: 300px;
+}
+
+.navbar li a.highlighted {
+    background-color: #FFD54F;
+    color: #3E2723;
+    font-weight: bold;
+    border-radius: 5px;
+}
